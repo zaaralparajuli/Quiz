@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+        
+        main {
+            padding: 2rem;
+            background-color: #ffffff;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .quiz-question {
+            margin-bottom: 1.5rem;
+        }
+        
+        .quiz-question p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+        
+        .quiz-question input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        form input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz">
+            <h1>Take the Quiz</h1>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p>1. What is the capital of France?</p>
+                    <input type="radio" name="q1" value="A"> A. London<br>
+                    <input type="radio" name="q1" value="B"> B. Paris<br>
+                    <input type="radio" name="q1" value="C"> C. Rome<br>
+                </div>
+                <div class="quiz-question">
+                    <p>2. What is 2 + 2?</p>
+                    <input type="radio" name="q2" value="A"> A. 3<br>
+                    <input type="radio" name="q2" value="B"> B. 5<br>
+                    <input type="radio" name="q2" value="C"> C. 4<br>
+                </div>
+                <div class="quiz-question">
+                    <p>3. Which planet is known as the Red Planet?</p>
+                    <input type="radio" name="q3" value="A"> A. Earth<br>
+                    <input type="radio" name="q3" value="B"> B. Mars<br>
+                    <input type="radio" name="q3" value="C"> C. Jupiter<br>
+                </div>
+                <div class="quiz-question">
+                    <p>4. Who wrote the play "Romeo and Juliet"?</p>
+                    <input type="radio" name="q4" value="A"> A. William Shakespeare<br>
+                    <input type="radio" name="q4" value="B"> B. Charles Dickens<br>
+                    <input type="radio" name="q4" value="C"> C. Mark Twain<br>
+                </div>
+                <div class="quiz-question">
+                    <p>5. What is the boiling point of water?</p>
+                    <input type="radio" name="q5" value="A"> A. 90°C<br>
+                    <input type="radio" name="q5" value="B"> B. 100°C<br>
+                    <input type="radio" name="q5" value="C"> C. 110°C<br>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quiz Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
